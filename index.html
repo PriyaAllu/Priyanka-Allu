@@ -3,35 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
-            <!-- Responsive Navigation Bar -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
-
-    <section id="hero">
-        <!-- Hero Image with Text Overlay -->
+    <section id="home">
+        <section id="home" style="background-image: url('images/hero-bg.jpg');">
+            <div class="hero-content">
+                <h1>Welcome to My Portfolio</h1>
+                <p>I'm Priyanka Allu, a passionate Data Scientist with expertise in data analysis, cloud infrastructure, and software testing.</p>
+            </div>
+        </section>        
     </section>
-
     <section id="about">
-        <h2>About Me</h2>
-        <p>Short professional bio here.</p>
-        <!-- Resume Download Link -->
-        <a href="/Users/priyankaallu/Desktop/My future/PriyankaAllu.pdf" download="/Users/priyankaallu/Desktop/My future/PriyankaAllu.pdf" class="resume-download">Download Resume</a>
+        <section id="about">
+            <img src="images/profile.jpg" alt="Priyanka Allu">
+            <h2>About Me</h2>
+            <p>Hello! I’m Priyanka Allu. I am currently pursuing a Master of Science in Data Science at DePaul University, with over three years of experience in various facets of data science and software engineering. Skilled in Python, SQL, AWS, and several data visualization tools, I am passionate about leveraging data for actionable insights and decision-making.</p>
+        </section>        
     </section>
-
-    <section id="projects">
-        <!-- Project Details -->
+    <section id="portfolio">
+        <section id="portfolio">
+            <h2>My Projects</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/project1.jpg" alt="Stock Market Trend Analysis">
+                    <h3>Stock Market Trend Analysis</h3>
+                    <p>Developed a stock trend analysis tool using Python and yFinance API to track and analyze stock performance for multiple companies.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/project2.jpg" alt="Pre-Diabetics Prediction Model">
+                    <h3>Pre-Diabetics Prediction Model</h3>
+                    <p>Built a predictive model using logistic regression and random forest to assess pre-diabetes likelihood based on health records.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/project3.jpg" alt="COVID-19 Data Visualization">
+                    <h3>COVID-19 Data Visualization</h3>
+                    <p>Created an interactive dashboard using Tableau to visualize global COVID-19 infection and recovery trends effectively.</p>
+                </div>
+                <!-- More projects can be added similarly -->
+            </div>
+        </section>        
     </section>
-
+    <section id="contact">
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="POST">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/priyanka-allu07"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                <a href="mailto:priyaallu07@gmail.com"><img src="images/email.png" alt="Email"></a>
+            </div>
+        </section>        
+    </section>
     <footer>
-        <!-- Footer Content -->
+        <!-- Footer content -->
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
