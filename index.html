@@ -3,46 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priyanka Allu - Data Scientist Portfolio</title>
+    <title>Priyanka Allu - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script> <!-- Link to your JavaScript file -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>Hi, I'm Priyanka Allu</h1>
-        <p>Aspiring Data Scientist and Software Engineer</p>
+        <h1>Priyanka Allu</h1>
         <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#" class="tablink" onclick="openTab('about')">About</a>
+            <a href="#" class="tablink" onclick="openTab('experience')">Experience</a>
+            <a href="#" class="tablink" onclick="openTab('skills')">Skills</a>
+            <a href="#" class="tablink" onclick="openTab('projects')">Projects</a>
+            <a href="#" class="tablink" onclick="openTab('contact')">Contact</a>
         </nav>
     </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a Master's student in Data Science at DePaul University with over 3 years of experience in data analysis, cloud infrastructure, and software testing. I have a passion for solving real-world problems using data-driven insights.</p>
-        <p>Technical Skills: Python, Pandas, SQL, AWS, Selenium, JIRA, Tableau, Machine Learning (Logistic Regression, Random Forest)</p>
-    </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
+    <!-- Tab Contents -->
+    <div id="about" class="tabcontent">
+        <h2>About Me</h2>
+        <p>I am a Master’s student in Data Science with over 3 years of experience...</p>
+    </div>
+
+    <div id="experience" class="tabcontent">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>Software Engineer at Expleo Solutions</h3>
+            <p>Performed UAT for financial software...</p>
+        </div>
+    </div>
+
+    <div id="skills" class="tabcontent">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>AWS</li>
+            <li>Machine Learning</li>
+        </ul>
+    </div>
+
+    <div id="projects" class="tabcontent">
+        <h2>Projects</h2>
         <div class="project">
             <h3>Stock Market Trend Analysis</h3>
-            <p>Analyzed stock data for multiple companies using Python and the YFinance API. Visualized trends and provided financial insights.</p>
+            <p>Analyzed stock data using Python and YFinance...</p>
+            <div id="stock-chart"></div> <!-- Placeholder for dynamic chart -->
         </div>
-        <div class="project">
-            <h3>Pre-Diabetes Prediction Model</h3>
-            <p>Developed a machine learning model to predict pre-diabetes using logistic regression and random forest algorithms.</p>
-        </div>
-        <div class="project">
-            <h3>COVID-19 Data Visualization</h3>
-            <p>Created an interactive dashboard in Tableau to visualize global COVID-19 infection and recovery rates.</p>
-        </div>
-    </section>
+    </div>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
+    <div id="contact" class="tabcontent">
+        <h2>Contact</h2>
         <p>Email: <a href="mailto:priyaallu07@gmail.com">priyaallu07@gmail.com</a></p>
         <p>LinkedIn: <a href="https://linkedin.com/in/priyanka-allu07" target="_blank">linkedin.com/in/priyanka-allu07</a></p>
-    </section>
+    </div>
 </body>
 </html>
