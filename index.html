@@ -5,58 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priyanka Allu - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script> <!-- Link to your JavaScript file -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
+    <!-- Navigation Bar -->
     <header>
-        <h1>Priyanka Allu</h1>
         <nav>
-            <a href="#" class="tablink" onclick="openTab('about')">About</a>
-            <a href="#" class="tablink" onclick="openTab('experience')">Experience</a>
-            <a href="#" class="tablink" onclick="openTab('skills')">Skills</a>
-            <a href="#" class="tablink" onclick="openTab('projects')">Projects</a>
-            <a href="#" class="tablink" onclick="openTab('contact')">Contact</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Tab Contents -->
-    <div id="about" class="tabcontent">
-        <h2>About Me</h2>
-        <p>I am a Master’s student in Data Science with over 3 years of experience...</p>
-    </div>
+    <!-- About Section -->
+    <section id="about">
+        <h1>Priyanka Allu</h1>
+        <p>Master's student in Data Science with 3+ years of experience in data analysis, cloud infrastructure, and software testing.</p>
+    </section>
 
-    <div id="experience" class="tabcontent">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Software Engineer at Expleo Solutions</h3>
-            <p>Performed UAT for financial software...</p>
-        </div>
-    </div>
-
-    <div id="skills" class="tabcontent">
+    <!-- Skills Section -->
+    <section id="skills">
         <h2>Skills</h2>
         <ul>
             <li>Python</li>
             <li>SQL</li>
             <li>AWS</li>
-            <li>Machine Learning</li>
+            <li>Tableau</li>
+            <!-- Add more skills here -->
         </ul>
-    </div>
+    </section>
 
-    <div id="projects" class="tabcontent">
+    <!-- Projects Section -->
+    <section id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <h3>Stock Market Trend Analysis</h3>
-            <p>Analyzed stock data using Python and YFinance...</p>
-            <div id="stock-chart"></div> <!-- Placeholder for dynamic chart -->
+            <h3>Stock Market Analysis</h3>
+            <p>A comprehensive analysis of stock market trends using yFinance data.</p>
+            <a href="https://github.com/PriyaAllu/StockMarketAnalysis" target="_blank">View Code</a>
         </div>
-    </div>
+        <!-- Add more projects here -->
+    </section>
 
-    <div id="contact" class="tabcontent">
+    <!-- Contact Section -->
+    <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:priyaallu07@gmail.com">priyaallu07@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/priyanka-allu07" target="_blank">linkedin.com/in/priyanka-allu07</a></p>
-    </div>
+        <p>Email me at <a href="mailto:PriyaAllu@gmail.com">PriyaAllu@gmail.com</a></p>
+    </section>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
