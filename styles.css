@@ -1,65 +1,50 @@
-/* Basic CSS Reset */
-* {
+/* style.css */
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    line-height: 1.6;
 }
 
-header {
-    background-color: #333;
+header nav {
+    display: flex;
+    justify-content: space-between;
     padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+#hero {
+    background-image: url('path/to/your-hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
 }
 
-header nav ul {
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
+.resume-download {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
     color: white;
     text-decoration: none;
-}
-
-section {
-    padding: 60px 20px;
-    margin-top: 60px;
-}
-
-#about h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-#skills, #projects, #contact {
-    background-color: #fff;
-    margin: 40px 0;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.project {
-    background-color: #f4f4f4;
-    padding: 10px;
-    margin-bottom: 10px;
     border-radius: 5px;
+    font-weight: bold;
 }
 
-.project h3 {
-    font-size: 1.5rem;
+.resume-download:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s;
 }
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+}
+
 
